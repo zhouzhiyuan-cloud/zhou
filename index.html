@@ -3,15 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的电子商务网站</title>
+    <title>电子商务网站</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 <header>
+    <!-- 登录模态窗口 -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>登录</h2>
+      <form id="loginForm">
+        <input type="text" placeholder="用户名" required>
+        <input type="password" placeholder="密码" required>
+        <button type="submit">登录</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- 注册模态窗口 -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>注册</h2>
+      <form id="registerForm">
+        <input type="text" placeholder="用户名" required>
+        <input type="password" placeholder="密码" required>
+        <button type="submit">注册</button>
+      </form>
+    </div>
+  </div>
     <div class="container">
-        <h1>欢迎来到电子商务网站</h1>
+        <h1>欢迎来到郑州轻工业大学电子商务网站</h1>
         <p class="text-center mb-2">您的在线购物目的地</p>
+        <!-- 添加登录和注册链接 -->
+        <nav class="auth-nav">
+            <a href="login.html" class="btn">登录</a>
+            <a href="register.html" class="btn">注册</a>
+        </nav>
     </div>
 </header>
 <nav class="navbar">
@@ -34,5 +64,4 @@
 </footer>
 </body>
 </html>
-
 
